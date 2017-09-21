@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>百度一下 你就知道</title>
+<meta charset="utf-8">
+<style type="text/css">
+body{
+	font-family:arial; /*字体类型*/
+	font-size: 12px;
+}
+.top{
+	height: 40px;
+	/*background-color: pink;*/
+}
+.top a {
+	color: black;
+	display: block;
+	padding: 0 10px;
+	font-weight: bold;
+}
+.top a:hover {
+
+	color: #00F;
+}
+.top li{
+	list-style: none;
+	position: relative;
+	float: right;
+	line-height:25px;  /*行高*/
+	left: -10px;
+}
+.top li ul li{
+	float: none;
+	margin-left: -30px;
+	width: 70px;
+}
+.top li ul{
+	position: absolute;
+	left: -15px;
+	top: 30px;
+	width: 30px;
+	display: none; /*消失*/
+	border: 1px ;
+}
+.top li ul li a:hover{
+	background-color: #3388FF;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.top li:hover a{
+	text-decoration: none;
+}
+.top li:hover ul{
+
+	display: block;
+
+}
+.top li ul li:first-child a:before{
+	content:"";
+	position:absolute;
+	left: 25px;
+	top: -8px;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #D1D1D1;
+}
+#duan{
+	padding: 0 10px;
+	width: 95px;
+	color: black;
+	font-weight: bold;
+}
+#erweima{
+	width: 95px;
+	height: 95px;
+}
+#duan{
+	color: black;
+}
+#duan ul li{
+	margin-left:-10px;
+	padding-top: 2px;
+}
+.find{
+	margin-left: 30%;
+	margin-top: 2%;
+	background-color: 
+}
+#input1{
+	height: 29px;
+	width: 400px;
+}
+#input2{
+	position: relative;
+	left: -3.5px;
+	height: 34px;
+	width: 100px;
+	background-color: #3388FF;
+	border: 0px solid #3388FF;
+}
+#input2:hover{
+	background-color: #F9F9F9;
+}
+.sky{
+	width: 100px;
+	position: relative;
+	float: left;
+}
+#hr1{
+	color: gray;
+}
+.news{
+	font-size: 15px;
+	font-weight: bold;
+	margin-left: 150px;
+	margin-top: 20px;
+	width: 400px;
+	/*background-color: pink;*/
+	position: relative;
+	float: left;
+}
+.news a{
+	text-decoration: none;
+	color: black;
+}
+.news a:hover{
+	color: #00F;
+}
+#title{
+	list-style: none;
+	font-size: 20px;
+	text-align: center;
+}
+.picture{
+	position:relative;
+	float: left;
+	width: 400px;
+	margin-top: 20px;
+	margin-left: 40px;
+}
+#now{
+	list-style: none;
+	font-size: 20px;
+	font-weight: bold;
+	padding-left: 200px;
+}
+.picture ul{
+	list-style: none;
+}
+.picture ul li a{
+	font-size: 15px;
+	font-weight: bold;
+	/*background-color: pink;*/
+}
+.picture a{
+	text-decoration: none;
+	padding-left: 140px;
+	color: black;
+}
+.picture a:hover{
+	color: #00F;
+}
+#xi,#door,#panda{
+	width: 550px;
+	height: 300px;
+}
+#img3{
+        margin-left: 289px;
+        margin-top: 90%;
+        width:1.5em;height: 1.5em;
+}
+</style>
+</head>
+<body background="130.jpg">
+<!-- menu start -->
+<div class="top">
+	<ul class="picturelist">
+		<li id="duan">
+			百度新闻客户端
+			<ul>
+				<li>
+					<img src="xinwen.jpg" id="erweima">
+				</li>
+			</ul>
+		</li>
+		<li id="denglu"><a href="#">登陆</a>
+			<ul>
+				<li><a href="#">我的主页</a></li>
+				<li><a href="#">账号设置</a></li>
+				<li><a href="#">退出</a></li>
+			</ul>
+		</li>
+		<li><a href="https://www.baidu.com/"><strong>百度首页</strong></a></li>
+		<li id=gang>|</li>
+		<li><a href="http://wenku.baidu.com/">文库</a></li>
+		<li><a href="http://map.baidu.com/">地图</a></li>
+		<li><a href="http://v.baidu.com/">视频</a></li>
+		<li><a href="http://image.baidu.com/">图片</a></li>
+		<li><a href="http://music.baidu.com/">音乐</a></li>
+		<li><a href="https://zhidao.baidu.com/">知道</a></li>
+		<li><a href="http://tieba.baidu.com/">贴吧</a></li>
+		<li><a href="https://www.baidu.com/">网页</a></li>
+	</ul>
+</div>
+<!-- menu over -->
+
+<!-- find start -->
+<div class="find">
+	<form action="6.php" method="post">
+    <input type="text" name="news" id="input1"> 
+    <input type="submit" name="" value="新闻搜索" id=input2>
+</div>
+<!-- find over -->
+<br><br><br><br><hr id="hr1">
+<!-- news start -->
+<div class="news">
+<ul>
+<li id=title>
+	热点新闻
+</li>
+<br>
+<li>
+	<a href="https://s0.news.ghwx.com.cn/a.html?aid=6190831365527700480&from=singlemessage&isappinstalled=1">习近平总书记最牵挂的人，是他们！</a>
+</li><br>
+<li>
+	<a href="https://s0.news.ghwx.com.cn/a.html?aid=6190762002019779584&from=singlemessage&isappinstalled=1">全世界都在羡慕中国的事:你却习以为常,浑然不知!</a>
+</li><br>
+<li>
+	<a href="https://s0.news.ghwx.com.cn/a.html?aid=6190791992332518400&fro">习总书记视察、国家核心布局：这个领域，爆发了</a>
+</li><br>
+<li>
+	<a href="http://news.cctv.com/2017/09/20/ARTI2xfa6LkAja2NTWrWGVFS170920.shtml">李克强主持会议</a>
+</li><br>
+<li>
+	<a href="http://news.cctv.com/2017/09/21/ARTImarjE0ClhdSZYv5IKHNo170921.shtml">刘云山访问柬埔寨</a>
+</li><br>
+<li>	<a href="http://news.cctv.com/2017/09/21/ARTIjUWY96UT5USBLwf7zz8H170921.shtml">张高丽会见代表</a>
+</li><br>
+<li class="hdline4">
+	<a href="http://news.xinhuanet.com/politics/2017-09/20/c_1121697587.htm ">党的十八大以来宣传思想文化工作综述</a>
+	</li><br>
+<li>
+<a href="http://d.news.ifeng.com/pc/special/55151/index.shtml?_zbs_baidu_news">喜迎十九大</a>
+</li><br>
+<li class="hdline5">
+<a href="http://www.cac.gov.cn/2017-09/19/c_1121685291.htm">大国网信安全护航</a>
+</li><br>
+<li><a href="http://china.huanqiu.com/special/2017wangluo/index.html">2017年国家网络安全宣传周</a>
+</li><br>
+<li>
+<a href="http://news.ifeng.com/a/20170921/52099158_0.shtml?_zbs_baidu_news">墨西哥地震遇难人数升至225人 全国进入3天哀悼期</a>
+</li><br>
+<li>
+<a href="http://world.huanqiu.com/exclusive/2017-09/11270714.html?from=bdwz">王毅：若伊核协议半途而废 中东或现更大乱局</a></li><br>
+<li>
+<a href="http://news.ifeng.com/a/20170921/52103274_0.shtml?_zbs_baidu_news">巴防长：印度沉溺于恐怖活动 破坏中巴经济走廊</a></li><br>
+<li>
+<a href="http://news.ifeng.com/a/20170921/52105619_0.shtml?_zbs_baidu_news">王毅会见韩国外长：坚决反对在韩部署“萨德”</a>
+</li><br>
+<li>
+<a href="http://china.huanqiu.com/article/2017-09/11269973.html?from=bdwz">交通运输部：不鼓励发展互联网租赁电动自行车</a>
+</li><br>
+<li>
+<a href="http://news.china.com/domestic/945/20170921/31489616.html">侠客岛:这两起改判的冤案为滥用权力之人敲响警钟</a>
+</li><br>
+</ul>
+</div>
+<!-- news over -->
+
+<!-- picture start -->
+<div class="picture">
+	<ul>
+	   <li id="now">
+	   	时事新闻
+	   </li>
+	   <br>
+		<li>
+			<img src="picture1.jpg" id="panda">
+			<br>
+			<a href="http://world.huanqiu.com/photo/2017-09/2883938.html?from=bdtp#p=1">上野动物园熊猫迎来百天纪念日</a>
+		</li>
+		<li>
+			<img src="picture2.jpg" id="xi">
+			<br>
+			<a href="http://news.xinhuanet.com/politics/2017-09/20/c_1121697603.htm">习近平会见新加坡总理李显龙 </a>
+		</li>
+		<li>
+			<img src="picture3.jpg" id="door">
+			<br>
+			<a href="http://photo.qianlong.com/2017/0920/2047206.shtml">天安门“祝福祖国”花篮开始组装</a>
+		</li>
+	</ul>
+</div>
+<!-- picture end -->
+ <a href="#top">
+        <img src="file:///d:/i/134.png" id="img3"> 
+    </a>
+</body>
+</html>

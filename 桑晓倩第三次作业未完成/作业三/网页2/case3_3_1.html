@@ -1,0 +1,213 @@
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> -->
+<!DOCTYPE>
+<html>
+<head>
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+<meta charset="utf-8">
+<title>必应</title>
+<style type="text/css">
+body {
+	font-family: arial;
+	font-size: 12px;
+}
+.right {
+	height: 50px;
+	width: 200px;
+	position: relative;
+	float: right;
+	font-size:14px; 
+	/*background-color: pink;*/
+	margin-right: 4%;
+}
+
+.right li {
+	list-style: none;
+	float: right;	
+	line-height:25px;
+	position: relative;
+	left: -10px;
+}
+.right a {
+	color: white;
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+}
+.right a:hover {
+	color: #E7E7E7;
+}
+.right li ul li{
+	float: none;
+	margin-left: -30px;
+	width: 80px;
+}
+.right li ul{
+	position: absolute;
+	left: -13px;
+	top: 30px;
+	width: 30px;
+	display: none;
+	border: 1px solid #D1D1D1;
+}
+.right li ul li a:hover{
+	background-color: #3388FF;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.right li:hover ul{
+	display: block;
+
+}
+.right li ul li:first-child a:before{
+	content:"";
+	position:absolute;
+	left: 25px;
+	top: -8px;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #D1D1D1;
+}
+#more{
+	padding: 0 20px;
+	/*background-color: #3388FF;*/
+	color: white;
+	width: 48px;
+}
+#more ul li{
+
+	margin-left:-20px;
+
+	padding-top: 5px;
+
+	color: #000;
+
+	text-align: center;
+
+}
+#more ul {
+	margin-top: -6px;
+	margin-left: 14px;
+	width: 48px;
+	/*background-color: #F9F9F9;*/
+	border-color: #E7E7E7;
+	border-top: 0;
+}
+#more:hover{
+	color: #000;
+	background-color: #F9F9F9;
+	border:1px solid #E7E7E7;
+	border-bottom: 0;
+}
+.left{
+
+	height: 50px;
+	position: relative;
+	float: left;
+	font-size:14px; 
+	/*background-color: yellow;*/
+}
+.left li{
+	list-style: none;
+	float: left;	
+	line-height:25px;
+	position: relative;
+	left: 15px;
+}
+.left a {
+	color: white;
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+}
+.left a:hover {
+	color: #E7E7E7;
+}
+.find{
+	position: absolute;
+     margin-top: 8%;
+     margin-left: 8%;
+}
+#kuang1{
+	position:relative;
+	margin-left: 14.3%;
+	height: 30px;
+	width: 80px;
+	font-size: 15px;
+	background-color: #B0C4DE;
+	border: 0px;
+}
+#kuang2{
+	position:relative;
+	right: 1%;
+	height: 30px;
+	width: 80px;
+	font-size: 15px;
+	background-color: black;
+	color: #008080;
+	border: 0px;
+}
+#input1{
+	position:relative;
+	float: right;
+	height: 45px;
+	width: 600px;
+}
+#input2{
+	position: relative;
+	right: 9px;
+	height: 45px;
+	width: 100px;
+	font-size: 36px;
+	color: white;
+	background-color:transparent;
+	border: 0px solid #3388FF;
+}
+ </style> 
+</head>
+<body style="background: url(127.jpg); background-size: 100%;">
+
+	<div class="right">
+  <ul>
+  	 <li id="more">More
+		<ul>
+               <li><a href="#">settings</a></li>
+				<li><a href="#">history</a></li>
+				<li><a href="#">MySaves</a></li>
+				<li><a href="#">Feedback</a></li>
+				<li><a href="#">SafeSearch</a></li>
+				<li><a href="#">Customize</a></li>
+				<li><a href="#">show Menu</a></li>
+		</ul>   
+	</li>	
+    <li id="shezhi"><a href="#">Login</a></li>
+    </ul>
+</div>
+
+<!-- left menu start -->
+<div class="left">
+	<ul>
+		<li><a href="http://cn.bing.com/images/trending?form=Z9LH">Images</a></li>
+		<li><a href="http://cn.bing.com/videos/trending">Videos</a></li>
+		<li><a href="http://cn.bing.com/academic/?FORM=Z9LH2">Academic</a></li>
+		<li><a href="http://cn.bing.com/dict/?FORM=Z9LH3">Dict</a></li>
+		<li><a href="http://cn.bing.com/ditu/?FORM=Z9LH4">Maps</a></li>
+		<li><a href="#">|</a></li>
+		<li><a href="https://www.office.com/?WT.mc_id=O16_BingHP/">Office Online</a></li>
+		<li><a href="https://outlook.live.com/owa/?WT.mc_id=O16_BingHP?mkt=zh-CN">Outlook</a></li>
+	</ul>
+</div>
+<!-- left menu over -->
+
+
+<div class="find">
+	<input type="submit" value="国内版" id="kuang1">
+	<input type="submit" value="国际版" id="kuang2">
+	<br>
+	<form action="http://cn.bing.com/" method="post">
+    <input type="text" name="news" id="input1"> 
+    <input type="submit" name="" value="Bing" id=input2>
+</div>
+
+</body>
+
+</html>

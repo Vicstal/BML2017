@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>登陆页面</title>
+<meta charset="utf-8">
+<style type="text/css">
+.out{
+	position: relative;
+	margin-left: 32%;
+	width: 500px;
+	height: 500px;
+	margin-top: 10%;
+	border: 1px solid gray;
+	/*#F9F9F9*/
+	box-shadow: 0 0 50px #000; border-radius: 10px;
+}
+.inside{
+	position: relative;
+	margin-left: 20%;
+	margin-top: 10%;
+	width: 300px;
+	height: 300px;
+	border: 1.5px solid pink;
+}
+#up{
+	position: absolute;
+	margin-top: 20%;
+	margin-left: 15%;
+}
+#down{
+	position: absolute;
+	margin-top: 30%;
+	margin-left: 15%;
+}
+#test3{
+	position: absolute;
+	margin-top: 48%;
+	margin-left: 38%;
+	width: 70px;
+	height: 40px;
+	background-color: transparent;
+}
+#p1{
+	display: none;
+	position: absolute;
+	margin-left: 17%;
+	margin-top: 30%;
+	color: gray;
+	font-size: 11px;
+}
+#p2{
+	display: none;
+	position: absolute;
+	margin-left: 17%;
+	margin-top: 42%;
+	color: gray;
+	font-size: 11px;
+}
+</style>
+</head>
+<body style="background: url(126.jpg); background-size: 100%;">
+<div >
+<!-- 外框 start-->
+<div class="out">
+<!-- 内框 start -->
+	<div class="inside">
+	    <label id="up">账户：<input type="text" name="" id="test" ></label>
+	    <p id="p1">用户名格式不正确,必须以数字和字母组成</p>
+		<br><br>
+		<label id="down">密码：<input type="text" name="" id="test2"></label>
+		<p id="p2">密码格式不正确，必须以字母，*，？组成</p>
+		<br>
+		<input type="submit" name="" id="test3" value="登陆" onclick=fn()>
+	</div>
+<!-- 内框 over -->
+</div>
+<!-- 外框 over' -->
+<script type="text/javascript">
+	function fn(){
+		var a =document.getElementById('test');
+		var c =document.getElementById('test2');
+		var p1=document.getElementById('p1');
+		var p2=document.getElementById('p2');
+		// var b2=/[a-zA-z]+(*)/;
+		var b=/\d+[a-zA-z]/;
+		var b2=/\w+[*?]/;
+		if(b.test(a.value)&&b2.test(c.value)){
+			alert("登陆成功");
+		}
+		else if(b.test(a.value)){
+			p1.style.display="block";
+		}
+		else if(b2.test(c.value)){
+			p2.style.display="block";
+		}
+		else {
+			p1.style.display="block";
+			p2.style.display="block";
+			// alert("登录失败");
+		}
+	}
+</script>
+</div>
+</body>
+</html>
